@@ -41,14 +41,106 @@
   <li class="nav-item"><a class="nav-link" href="minecraft.html">Minecraft</a></li>
 <li class="nav-item"><a class="nav-link" href="netart.html">Net Art</a></li>
 <li class="nav-item"><a class="nav-link" href="3dprint.html">3D Print</a></li>
+<li class="nav-item"><a class="nav-link" href="diyphotoshop.html">Code as Art</a></li>
 <li class="nav-item"><a class="nav-link" href="final.html">Zbrush</a></li>
 </ul>
+
+
+<h2 style="color:white; text-align:center;">Selfie!</h2>
+
+  <img src="images/selfie.png" alt="It's my selfie, made in p5.js." style="width:800px;" class="center">
+
+<p style="color:white; text-align:center;">
+My code! <br>
+
+let img;<br>
+<br>
+function preload() {<br>
+  // Load your image<br>
+  img = loadImage('wonderland.png');<br>
+}<br>
+<br>
+function setup() {<br>
+  createCanvas(600, 600)<br>
+}<br>
+<br>
+function draw() {<br>
+  background(220);<br>
+  // Display the image at (0, 0) position<br>
+  image(img, 0, 0);<br>
+  <br>
+   //back of hair<br>
+fill(42,28,22);<br>
+ellipse(300,320,270,400);<br>
+  <br>
+  //neck<br>
+fill(230,183,163);<br>
+square(270,435,55);<br>
+  <br>
+  //shoulders<br>
+fill(120);<br>
+ellipse(300,600,300,250);<br>
+  <br>
+  //head<br>
+fill(230,183,163);<br>
+ellipse(300,300,250,300);<br>
+<br>
+// sclera<br>
+fill(255);<br>
+ellipse(350,260,50,30);<br>
+<br>
+//iris<br>
+fill(73,54,47);<br>
+ellipse(350,260,30,30);<br>
+<br>
+//sclera<br>
+fill(255);<br>
+ellipse(250,260,50,30);<br>
+<br>
+//iris<br>
+fill(73,54,47);<br>
+ellipse(250,260,30,30);<br>
+<br>
+//eyebrows<br>
+line(230,230,270,230);<br>
+line(320,230,370,230);<br>
+<br>
+//nose<br>
+fill(230,188,173);<br>
+ellipse(300,320,30,20);<br>
+<br>
+//nostrils<br>
+fill(0);<br>
+ellipse(290,323,10,8);<br>
+fill(0);<br>
+ellipse(310,323,10,8);<br>
+<br>
+//mouth<br>
+fill(218,142,145);<br>
+ellipse(300,380,40,20);<br>
+<br>
+//weird hair thing in front<br>
+fill(42, 28, 22); // Hair color<br>
+beginShape();<br>
+vertex(270, 140); // Start of hair shape (moved up)<br>
+bezierVertex(300, 100, 400, 100, 380, 180); // Curve for hair<br>
+bezierVertex(400, 180, 460, 220, 400, 500); // Curve for hair<br>
+bezierVertex(450, 70, 240, 180, 150, 380); // Curve for hair<br>
+bezierVertex(200, 200, 190, 170, 210, 180); // Curve for hair<br>
+endShape(CLOSE);<br>
+
+
+
+</p>
 
 
 <h2 style="color:white; text-align:center;">DIY Photoshop</h2>
 
 <p style = "color:white; text-align:center;">
 For this project, we set out to make a drawing tool, where the different brushes were made up of different objects and items. For my project, I thought it would be a fun idea to have all of my brushes be made up of various symbols from the Legend of Zelda games. One of my current hyperfixations is Zelda, and I've drawn quite a bit of Zelda art, so I thought it would be interesting to draw a Zelda-themed drawing using Zelda symbols. It's not the best drawing in the world, but I still accomplished what I set out to do, so I very much like it. 
+<br>
+<br>
+Click on the image to try the tool yourself! 
 </p>
 
 
@@ -65,7 +157,10 @@ img {
 </style>
 </head>
 <body>
+
+<a href="diyps2023/index.html">
   <img src="images/diyphotoshop.png" alt="I drew Zelda praying!!" style="width:800px;" class="center">
+</a>
 
 <p style="color:white; text-align:center;">
 My code! <br>
