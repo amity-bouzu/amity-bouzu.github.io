@@ -17,7 +17,8 @@
             position: fixed; /* Fixed on the sides */
             top: 0;
             bottom: 0;
-            width: 20px; /* Adjust as needed */
+            width: 200px; /* Adjust as needed */
+background-size: 200px;
             background-image: url("https://amity-bouzu.github.io/images/border.png"); /* Path to your border image */
             background-repeat: repeat-y; /* Repeat vertically */
             z-index: 0; /* Behind the content */
@@ -25,11 +26,12 @@
 
         .border-left {
             left: 0; /* Left edge */
+ transform: scaleX(-1);
         }
 
         .border-right {
             right: 0; /* Right edge */
-            transform: scaleX(-1); /* Mirror for the right side */
+            /* Mirror for the right side */
         }
 
         .container {
@@ -38,8 +40,10 @@
             width: 80%; /* Adjust width as needed */
             margin: auto; /* Center the container */
             background-color: black; /* Container background */
-            z-index: 1; /* Ensure content is above borders */
+            z-index: 999; /* Ensure content is above borders */
         }
+
+
 
         .nav {
             margin: 0 auto;
