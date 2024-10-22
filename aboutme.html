@@ -1,68 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>ARennie Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0; /* Remove default body margin */
+            background-color: black; /* Set background color */
+        }
 
+        .border {
+            position: fixed; /* Fixed on the sides */
+            top: 0;
+            bottom: 0;
+            width: 200px; /* Adjust as needed */
+background-size: 200px;
+            background-image: url("https://amity-bouzu.github.io/images/bordergrey.png"); /* Path to your border image */
+            background-repeat: repeat-y; /* Repeat vertically */
+            z-index: 0; /* Behind the content */
+        }
 
-<title>Portfolio</title>
-</head>
-<body style="background-color:black;">
-<div class="container">
+        .border-left {
+            left: 0; /* Left edge */
+ transform: scaleX(-1);
+        }
 
-<a href="index.html" style="color:black;">
-<h1 style="color:white; text-align:center;">Alice Rennie</h1>
-</a>
+        .border-right {
+            right: 0; /* Right edge */
+            /* Mirror for the right side */
+        }
 
-<style>
-.nav {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      padding: 0;
-    }
-    .nav-item {
-      margin: 0 10px; /* Add margin between nav items if needed */
-    }
-    .nav-link {
-      text-decoration: none;
-      color: white; /* Change color as needed */
-    }
-</style>
-
-<ul class="nav">
-  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="glitch.html">Glitch</a></li>
-  <li class="nav-item"><a class="nav-link" href="hillary.html">Meme</a></li>
-  <li class="nav-item"><a class="nav-link" href="minecraft.html">Minecraft</a></li>
-<li class="nav-item"><a class="nav-link" href="netart.html">Net Art</a></li>
-<li class="nav-item"><a class="nav-link" href="3dprint.html">3D Print</a></li>
-<li class="nav-item"><a class="nav-link" href="diyphotoshop.html">Code as Art</a></li>
-<li class="nav-item"><a class="nav-link" href="final.html">Zbrush</a></li>
-</ul>
+        .container {
+            position: relative; /* Keep content above borders */
+            padding: 20px; /* Space around content */
+            width: 80%; /* Adjust width as needed */
+            margin: auto; /* Center the container */
+            background-color: black; /* Container background */
+            z-index: 999; /* Ensure content is above borders */
+        }
 
 
-<p style="color:white; text-align:center;">About Me</p>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+        .nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 10px; /* Add margin between nav items if needed */
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white; /* Change color as needed */
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            width: auto\9; /* ie8 */
+        }
+
+.image-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Add some space between images */
 }
-</style>
+
+    </style>
 </head>
 <body>
-  <img src="images/obon.jpg" alt="The Artist." style="width:800px;" class="center">
+    <div class="border border-left"></div>
+    <div class="border border-right"></div>
+
+    <div class="container">
+        <a href="index.html" style="color:black;">
+            <h1 style="color:white; text-align:center;">Alice Rennie</h1>
+        </a>
+
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="glitch.html">Glitch</a></li>
+            <li class="nav-item"><a class="nav-link" href="hillary.html">Meme</a></li>
+            <li class="nav-item"><a class="nav-link" href="minecraft.html">Minecraft</a></li>
+            <li class="nav-item"><a class="nav-link" href="netart.html">Net Art</a></li>
+            <li class="nav-item"><a class="nav-link" href="3dprint.html">3D Print</a></li>
+            <li class="nav-item"><a class="nav-link" href="diyphotoshop.html">Code as Art</a></li>
+            <li class="nav-item"><a class="nav-link" href="final.html">Zbrush</a></li>
+        </ul>
+
+<br>
+<h2 style ="color:white; text-align:center;">About Me</h2>
+  <img src="images/kimono.jpg" alt="The Artist." style="width:800px;" class="center">
+
+<br>
 
 <p style="color:white; text-align:center;">
 Alice Tatsumi Rennie is a digital artist, 2D & 3D animator, and writer.  Her work consists of character concepts, animated short films, and she has written many original stories. As a current Digital Media Art student at San Jose State University, and prize winner of the Los Altos Rotary Club Young at Art Contest 2022, she plans to someday work as a comic book artist (or mangaka) in Japan. 
